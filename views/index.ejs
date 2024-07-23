@@ -8,9 +8,13 @@
 </head>
 
 <body>
-  <h1>
-    Hey! It's a <%= dateType %>, it's time to <%= quote %>
-  </h1>
+  <ul>
+    <% for (let i=0; i<fruits.length; i++) {%>
+      <li>
+        Hey! It's a <%= fruits[i] %>
+      </li>
+      <% } %>
+  </ul>
 </body>
 
 </html>
